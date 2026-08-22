@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Souq — GBS Vendor Master</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-word">QATAR</div>
+      <div class="brand-sub"><span class="latin">AIRWAYS</span><span class="ar">القطرية</span></div>
+      <div class="brand-pill"><span class="latin">Data Souq</span><span class="ar">سوق البيانات</span></div>
+    </div>
+    <nav class="side-nav">
+      <a class="nav-item" href="index.html"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 8.2 9 3.2l6 5V15H3z"/></svg>Home</a>
+      <a class="nav-item is-active" href="finance.html"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="5" height="5" rx="1"/><rect x="10" y="3" width="5" height="5" rx="1"/><rect x="3" y="10" width="5" height="5" rx="1"/><rect x="10" y="10" width="5" height="5" rx="1"/></svg>Business Functions</a>
+      <a class="nav-item" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M9 2.8l1.9 3.9 4.3.6-3.1 3 .7 4.3L9 12.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z"/></svg>Favorites</a>
+      <a class="nav-item" href="requests.html"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3" width="11" height="12" rx="1.5"/><path d="M6.5 7h5M6.5 10h5"/></svg>Requests</a>
+      <a class="nav-item" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="12" height="12" rx="2"/><path d="M9 6.5v5M6.5 9h5"/></svg>Collections</a>
+      <a class="nav-item" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 3.5h7a3 3 0 0 1 3 3v8a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M4 3.5V12"/></svg>Data Glossary</a>
+    </nav>
+    <a class="nav-item nav-help" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="9" r="6.5"/><path d="M7.2 7.2a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.8.5-.8 1v.4"/></svg>Help &amp; Support</a>
+  </aside>
+
+  <main class="main">
+
+    <header class="page-head">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span>›</span>
+        <a href="finance.html">Business Functions</a><span>›</span>
+        <a href="finance.html">Finance</a><span>›</span>
+        <a href="finance.html">GBS</a><span>›</span>
+        <span class="current">GBS Vendor Master</span>
+      </nav>
+      <div class="title-row">
+        <div>
+          <div class="title-line">
+            <h1 class="page-title">GBS Vendor Master</h1>
+            <span class="chip chip--success"><svg width="12" height="12" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="m4 9.5 3.2 3L14 6"/></svg>Certified</span>
+          </div>
+          <p class="lede">Master data for approved vendors used across GBS procurement and AP processes.</p>
+          <div class="meta-row">
+            <span>Published by <strong>GBS Data Office</strong></span>
+            <span>Published on <strong>12 Jun 2026</strong></span>
+            <span>Type <strong>BigQuery Table</strong></span>
+            <span>Subscriptions <strong>6</strong></span>
+            <span>Likes <strong>9</strong></span>
+          </div>
+        </div>
+        <button class="btn-primary" type="button">Request Access</button>
+      </div>
+      <nav class="tabs" aria-label="Product sections">
+        <a class="tab is-active" href="product.html" aria-current="page">Summary</a>
+        <a class="tab" href="product-sample.html">Sample Dataset</a>
+        <a class="tab" href="#">Data Profiling</a>
+        <a class="tab" href="#">Lineage</a>
+        <a class="tab" href="#">Data Contract</a>
+        <a class="tab" href="#">Discussions</a>
+      </nav>
+    </header>
+
+    <div class="detail-grid" style="padding:26px 48px 44px">
+
+      <section class="panel" aria-labelledby="overview-heading">
+        <div class="panel-title" id="overview-heading">Overview</div>
+        <div class="band">DATASET STATISTICS</div>
+        <div class="kv">
+          <div class="k">UID</div><div class="mono">c37f6b48-6190-4934-951b-886a83d244fa</div>
+          <div class="k">Display Name</div><div>GBS Vendor Master</div>
+          <div class="k">Name</div><div class="mono">projects/qr-gbs-prod/datasets/gbs/tables/vendor_master</div>
+          <div class="k">Create Time</div><div>2025-06-12 · 09:40 AST</div>
+          <div class="k">Update Time</div><div>2026-08-17 · 10:00 AST</div>
+          <div class="k">Rows · Columns</div><div>184,206 rows · 42 columns</div>
+        </div>
+      </section>
+
+      <div class="side-stack">
+        <section class="panel panel--pad" aria-labelledby="quality-heading">
+          <div class="panel-title panel-title--plain" id="quality-heading">Data Quality</div>
+          <div class="q-list">
+            <div class="q-item"><span class="q-ico q-ico--ok"><svg width="11" height="11" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m4 9.5 3.2 3L14 6"/></svg></span>Certified for business use</div>
+            <div class="q-item"><span class="q-ico q-ico--ok"><svg width="11" height="11" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m4 9.5 3.2 3L14 6"/></svg></span>Refreshed weekly — Sundays, 10 AM</div>
+            <div class="q-item"><span class="q-ico q-ico--ok"><svg width="11" height="11" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m4 9.5 3.2 3L14 6"/></svg></span>Complete — no missing fields</div>
+            <div class="q-item"><span class="q-ico q-ico--owner"><svg width="11" height="11" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="6.5" r="2.6"/><path d="M3.8 14.5c.6-2.6 2.6-4 5.2-4s4.6 1.4 5.2 4"/></svg></span>Owner — GBS Finance Team</div>
+          </div>
+        </section>
+
+        <section class="panel panel--pad" aria-labelledby="classification-heading">
+          <div class="panel-title panel-title--plain panel-title--tight" id="classification-heading">Classification</div>
+          <span class="pill-tag">Confidential — Restricted</span>
+        </section>
+
+        <section class="panel panel--pad" aria-labelledby="function-heading">
+          <div class="panel-title panel-title--plain panel-title--tight" id="function-heading">Business Function</div>
+          <div class="fn-path"><a href="finance.html">Finance</a><span class="sep">›</span><a href="finance.html">GBS</a></div>
+        </section>
+      </div>
+
+    </div>
+  </main>
+</div>
+</body>
+</html>

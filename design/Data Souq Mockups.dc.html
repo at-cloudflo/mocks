@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;family=Noto+Kufi+Arabic:wght@500;600&amp;display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+body{margin:0;background:#EFEBE6;font-family:"Public Sans",system-ui,sans-serif}
+a{color:#5C0632}a:hover{color:#3F0422}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 13px/1.2 "Public Sans",sans-serif;color:#1a1a1a}
+.dv-opts{display:flex;flex-wrap:wrap;gap:36px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 "Public Sans",sans-serif;color:rgba(0,0,0,.55)}
+.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.1);border-radius:10px;box-shadow:0 2px 10px rgba(40,10,25,.08);overflow:hidden}
+.dv-opt:target .dv-oid{background:#5C0632;color:#fff}
+.dv-next{margin:22px 0 0;font:12px/1.5 "Public Sans",sans-serif;color:rgba(0,0,0,.5)}
+</style>
+</helmet>
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Sample dataset · search results · requests (extends <a class="dv-oid" href="#1c">1c</a>)</span></div>
+<div class="dv-opts">
+
+<!-- ============ 2a SAMPLE DATASET TAB ============ -->
+<div class="dv-opt" id="2a">
+<div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Product detail — Sample Dataset tab (masked preview)</div>
+<div class="dv-card" style="width:1366px">
+<div style="display:flex;align-items:stretch;min-height:760px">
+  <aside style="width:236px;flex:none;background:linear-gradient(180deg,#4E0527,#360419);color:#fff;display:flex;flex-direction:column;padding:22px 14px 18px">
+    <div style="padding:2px 10px 18px;border-bottom:1px solid rgba(255,255,255,.14)">
+      <div style="font-size:22px;font-weight:800;letter-spacing:4px">QATAR</div>
+      <div style="display:flex;align-items:baseline;gap:8px;margin-top:2px"><span style="font-size:9px;font-weight:600;letter-spacing:3px;opacity:.75">AIRWAYS</span><span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.75">القطرية</span></div>
+      <div style="margin-top:14px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 12px"><span style="font-size:11.5px;font-weight:700;letter-spacing:.4px">Data Souq</span><span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.85">سوق البيانات</span></div>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:4px;margin-top:16px;flex:1">
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 8.2 9 3.2l6 5V15H3z"></path></svg>Home</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;background:rgba(255,255,255,.14);color:#fff;font-size:13.5px;font-weight:600"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="5" height="5" rx="1"></rect><rect x="10" y="3" width="5" height="5" rx="1"></rect><rect x="3" y="10" width="5" height="5" rx="1"></rect><rect x="10" y="10" width="5" height="5" rx="1"></rect></svg>Business Functions</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M9 2.8l1.9 3.9 4.3.6-3.1 3 .7 4.3L9 12.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z"></path></svg>Favorites</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3" width="11" height="12" rx="1.5"></rect><path d="M6.5 7h5M6.5 10h5"></path></svg>Requests</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="12" height="12" rx="2"></rect><path d="M9 6.5v5M6.5 9h5"></path></svg>Collections</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 3.5h7a3 3 0 0 1 3 3v8a2.5 2.5 0 0 0-2.5-2.5H4z"></path><path d="M4 3.5V12"></path></svg>Data Glossary</div>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.65);font-size:13px;font-weight:500;border-top:1px solid rgba(255,255,255,.14)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="9" r="6.5"></circle><path d="M7.2 7.2a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.8.5-.8 1v.4"></path></svg>Help &amp; Support</div>
+  </aside>
+  <main style="flex:1;min-width:0;background:#F7F5F2">
+    <div style="background:#fff;border-bottom:1px solid #EAE4DE;padding:26px 48px 0">
+      <nav style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:500;color:#8A7C80">
+        <a href="#1a" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">Home</a><span>›</span>
+        <a href="#1b" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">Business Functions</a><span>›</span>
+        <a href="#1b" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">Finance</a><span>›</span>
+        <a href="#1b" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">GBS</a><span>›</span>
+        <span style="color:#5C0632;font-weight:600">GBS Vendor Master</span>
+      </nav>
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-top:18px">
+        <div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <h1 style="margin:0;font-size:26px;font-weight:800;color:#241A1E">GBS Vendor Master</h1>
+            <span style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:#1F6B45;background:#E6F2EB;border-radius:999px;padding:4px 11px"><svg width="12" height="12" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="m4 9.5 3.2 3L14 6"></path></svg>Certified</span>
+          </div>
+          <p style="margin:8px 0 0;font-size:13.5px;line-height:1.55;color:#6E6266;max-width:620px;text-wrap:pretty">Master data for approved vendors used across GBS procurement and AP processes.</p>
+        </div>
+        <button style="flex:none;border:none;background:#5C0632;color:#fff;border-radius:8px;padding:12px 22px;font-size:13.5px;font-weight:700;font-family:inherit;cursor:pointer;box-shadow:0 2px 8px rgba(92,6,50,.3)" style-hover="background:#3F0422">Request Access</button>
+      </div>
+      <div style="display:flex;gap:26px;margin-top:22px;font-size:13px;font-weight:600">
+        <a href="#1c" style="padding:0 2px 12px;color:#8A7C80;border-bottom:2.5px solid transparent;text-decoration:none" style-hover="color:#5C0632">Summary</a>
+        <span style="padding:0 2px 12px;color:#5C0632;border-bottom:2.5px solid #5C0632">Sample Dataset</span>
+        <span style="padding:0 2px 12px;color:#8A7C80;border-bottom:2.5px solid transparent" style-hover="color:#5C0632">Data Profiling</span>
+        <span style="padding:0 2px 12px;color:#8A7C80;border-bottom:2.5px solid transparent" style-hover="color:#5C0632">Lineage</span>
+        <span style="padding:0 2px 12px;color:#8A7C80;border-bottom:2.5px solid transparent" style-hover="color:#5C0632">Data Contract</span>
+        <span style="padding:0 2px 12px;color:#8A7C80;border-bottom:2.5px solid transparent" style-hover="color:#5C0632">Discussions</span>
+      </div>
+    </div>
+    <div style="padding:26px 48px 44px;display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:#8A4B00;background:#FBEFDD;border-radius:999px;padding:5px 11px"><svg width="12" height="12" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="10" height="7" rx="1.5"></rect><path d="M6 8V6a3 3 0 0 1 6 0v2"></path></svg>Masked preview</span>
+          <span style="font-size:12px;color:#8A7C80">Sensitive columns are anonymized until access is granted.</span>
+        </div>
+        <span style="font-size:12px;color:#8A7C80">Showing <strong style="color:#241A1E">10</strong> of 100 sample rows</span>
+      </div>
+      <div style="background:#fff;border:1px solid #EAE4DE;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(40,10,25,.05)">
+        <div style="display:grid;grid-template-columns:120px 1.4fr 1fr .9fr .9fr .8fr 1fr;background:#4E0527;color:#fff;font-size:11px;font-weight:700;letter-spacing:.4px">
+          <div style="padding:11px 16px">VENDOR_ID</div><div style="padding:11px 16px">VENDOR_NAME</div><div style="padding:11px 16px">COUNTRY</div><div style="padding:11px 16px">CATEGORY</div><div style="padding:11px 16px">PAYMENT_TERMS</div><div style="padding:11px 16px">STATUS</div><div style="padding:11px 16px">UPDATED_AT</div>
+        </div>
+        <div style="display:grid;grid-template-columns:120px 1.4fr 1fr .9fr .9fr .8fr 1fr;font-size:12px;color:#241A1E;font-family:ui-monospace,Menlo,monospace">
+          <div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">V-104281</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">Al Rayyan Catering Co.</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">QA</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">Catering</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">NET 30</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;color:#1F6B45;font-weight:600">ACTIVE</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">2026-08-17</div>
+          <div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">V-104282</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">Gulf Ground Services LLC</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">AE</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">Ground Ops</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">NET 45</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7;color:#1F6B45;font-weight:600">ACTIVE</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">2026-08-17</div>
+          <div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">V-104283</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">████████ Fuel Trading</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">SG</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">Fuel</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">NET 60</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;color:#1F6B45;font-weight:600">ACTIVE</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">2026-08-16</div>
+          <div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">V-104284</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">Doha Tech Supplies WLL</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">QA</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">IT Hardware</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">NET 30</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7;color:#8A4B00;font-weight:600">ON HOLD</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">2026-08-14</div>
+          <div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">V-104285</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">████████ Logistics FZE</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">AE</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">Cargo</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">NET 45</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;color:#1F6B45;font-weight:600">ACTIVE</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">2026-08-12</div>
+          <div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">V-104286</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">Hamad Aviation Parts</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">QA</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">MRO</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">NET 60</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7;color:#1F6B45;font-weight:600">ACTIVE</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">2026-08-10</div>
+          <div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">V-104287</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">Skyline Media Group</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">GB</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">Marketing</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">NET 30</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;color:#B3261E;font-weight:600">INACTIVE</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">2026-08-02</div>
+          <div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">V-104288</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">████████ Facilities Mgmt</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">QA</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">Facilities</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">NET 30</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7;color:#1F6B45;font-weight:600">ACTIVE</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">2026-07-28</div>
+          <div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">V-104289</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">Oryx Office Interiors</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">QA</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">Facilities</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">NET 45</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4;color:#1F6B45;font-weight:600">ACTIVE</div><div style="padding:11px 16px;border-bottom:1px solid #F0EAE4">2026-07-21</div>
+          <div style="padding:11px 16px;background:#FBF9F7">V-104290</div><div style="padding:11px 16px;background:#FBF9F7">Jetstream Training Ltd</div><div style="padding:11px 16px;background:#FBF9F7">GB</div><div style="padding:11px 16px;background:#FBF9F7">Training</div><div style="padding:11px 16px;background:#FBF9F7">NET 30</div><div style="padding:11px 16px;background:#FBF9F7;color:#1F6B45;font-weight:600">ACTIVE</div><div style="padding:11px 16px;background:#FBF9F7">2026-07-18</div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-top:1px solid #F0EAE4;background:#fff">
+          <span style="font-size:12px;color:#8A7C80">42 columns · scroll horizontally to view all</span>
+          <div style="display:flex;gap:6px;align-items:center;font-size:12px;font-weight:600">
+            <span style="padding:6px 11px;border:1px solid #E0D8D1;border-radius:6px;color:#C9BDB4">‹</span>
+            <span style="padding:6px 11px;border-radius:6px;background:#5C0632;color:#fff">1</span>
+            <span style="padding:6px 11px;border:1px solid #E0D8D1;border-radius:6px;color:#5C0632">2</span>
+            <span style="padding:6px 11px;border:1px solid #E0D8D1;border-radius:6px;color:#5C0632">3</span>
+            <span style="padding:6px 11px;border:1px solid #E0D8D1;border-radius:6px;color:#5C0632">›</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</div>
+</div>
+
+<!-- ============ 2b SEARCH RESULTS ============ -->
+<div class="dv-opt" id="2b">
+<div class="dv-olabel"><a class="dv-oid" href="#2b">2b</a>Search results — function / domain / asset-type filters</div>
+<div class="dv-card" style="width:1366px">
+<div style="display:flex;align-items:stretch;min-height:760px">
+  <aside style="width:236px;flex:none;background:linear-gradient(180deg,#4E0527,#360419);color:#fff;display:flex;flex-direction:column;padding:22px 14px 18px">
+    <div style="padding:2px 10px 18px;border-bottom:1px solid rgba(255,255,255,.14)">
+      <div style="font-size:22px;font-weight:800;letter-spacing:4px">QATAR</div>
+      <div style="display:flex;align-items:baseline;gap:8px;margin-top:2px"><span style="font-size:9px;font-weight:600;letter-spacing:3px;opacity:.75">AIRWAYS</span><span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.75">القطرية</span></div>
+      <div style="margin-top:14px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 12px"><span style="font-size:11.5px;font-weight:700;letter-spacing:.4px">Data Souq</span><span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.85">سوق البيانات</span></div>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:4px;margin-top:16px;flex:1">
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;background:rgba(255,255,255,.14);color:#fff;font-size:13.5px;font-weight:600"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 8.2 9 3.2l6 5V15H3z"></path></svg>Home</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="5" height="5" rx="1"></rect><rect x="10" y="3" width="5" height="5" rx="1"></rect><rect x="3" y="10" width="5" height="5" rx="1"></rect><rect x="10" y="10" width="5" height="5" rx="1"></rect></svg>Business Functions</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M9 2.8l1.9 3.9 4.3.6-3.1 3 .7 4.3L9 12.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z"></path></svg>Favorites</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3" width="11" height="12" rx="1.5"></rect><path d="M6.5 7h5M6.5 10h5"></path></svg>Requests</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="12" height="12" rx="2"></rect><path d="M9 6.5v5M6.5 9h5"></path></svg>Collections</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 3.5h7a3 3 0 0 1 3 3v8a2.5 2.5 0 0 0-2.5-2.5H4z"></path><path d="M4 3.5V12"></path></svg>Data Glossary</div>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.65);font-size:13px;font-weight:500;border-top:1px solid rgba(255,255,255,.14)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="9" r="6.5"></circle><path d="M7.2 7.2a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.8.5-.8 1v.4"></path></svg>Help &amp; Support</div>
+  </aside>
+  <main style="flex:1;min-width:0;background:#F7F5F2">
+    <div style="background:#fff;border-bottom:1px solid #EAE4DE;padding:26px 48px 22px">
+      <nav style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:500;color:#8A7C80">
+        <a href="#1a" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">Home</a><span>›</span>
+        <span style="color:#5C0632;font-weight:600">Search results</span>
+      </nav>
+      <div style="display:flex;gap:0;margin-top:16px;max-width:640px;box-shadow:0 1px 4px rgba(40,10,25,.08);border-radius:8px">
+        <input value="GBS" style="flex:1;border:1px solid #DED6CF;border-right:none;border-radius:8px 0 0 8px;padding:11px 16px;font-size:13.5px;font-family:inherit;color:#241A1E;outline:none;background:#fff">
+        <button style="border:none;background:#5C0632;color:#fff;border-radius:0 8px 8px 0;padding:0 18px;cursor:pointer;display:flex;align-items:center" style-hover="background:#3F0422"><svg width="17" height="17" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="5"></circle><path d="m12 12 3.5 3.5"></path></svg></button>
+      </div>
+    </div>
+    <div style="padding:24px 48px 44px;display:grid;grid-template-columns:250px 1fr;gap:24px;align-items:start">
+      <div style="background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:18px 20px;box-shadow:0 1px 3px rgba(40,10,25,.05);display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-size:13.5px;font-weight:700;color:#241A1E">Filter By</span><a href="#2b" style="font-size:11.5px;font-weight:600;color:#5C0632;text-decoration:none">Clear all</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:.6px;color:#8A7C80">FUNCTION</span>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;background:#5C0632;display:flex;align-items:center;justify-content:center;color:#fff"><svg width="9" height="9" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="3"><path d="m4 9.5 3.2 3L14 6"></path></svg></span>Finance <span style="margin-left:auto;color:#8A7C80;font-size:11px">7</span></label>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C9BDB4"></span>Commercial <span style="margin-left:auto;color:#8A7C80;font-size:11px">3</span></label>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C9BDB4"></span>Operations <span style="margin-left:auto;color:#8A7C80;font-size:11px">1</span></label>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C9BDB4"></span>Cargo <span style="margin-left:auto;color:#8A7C80;font-size:11px">1</span></label>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px;border:1.5px solid #5C0632;border-radius:8px;padding:12px 14px;background:#FDFAF8">
+          <span style="display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:700;letter-spacing:.6px;color:#5C0632">DOMAIN / SUB-DOMAIN <span style="font-size:9px;font-weight:700;background:#5C0632;color:#fff;border-radius:999px;padding:2px 7px">NEW</span></span>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;background:#5C0632;display:flex;align-items:center;justify-content:center;color:#fff"><svg width="9" height="9" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="3"><path d="m4 9.5 3.2 3L14 6"></path></svg></span>GBS <span style="margin-left:auto;color:#8A7C80;font-size:11px">6</span></label>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C9BDB4"></span>Treasury <span style="margin-left:auto;color:#8A7C80;font-size:11px">2</span></label>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C9BDB4"></span>Trade Finance <span style="margin-left:auto;color:#8A7C80;font-size:11px">2</span></label>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C9BDB4"></span>Tax <span style="margin-left:auto;color:#8A7C80;font-size:11px">1</span></label>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:.6px;color:#8A7C80">ASSET TYPE</span>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C9BDB4"></span>Datasets <span style="margin-left:auto;color:#8A7C80;font-size:11px">8</span></label>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C9BDB4"></span>KPIs <span style="margin-left:auto;color:#8A7C80;font-size:11px">2</span></label>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C9BDB4"></span>Visualizations <span style="margin-left:auto;color:#8A7C80;font-size:11px">1</span></label>
+          <label style="display:flex;align-items:center;gap:9px;font-size:12.5px;color:#241A1E"><span style="width:15px;height:15px;border-radius:4px;border:1.5px solid #C9BDB4"></span>Analytical Models <span style="margin-left:auto;color:#8A7C80;font-size:11px">1</span></label>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <span style="font-size:14px;font-weight:700;color:#241A1E">Showing 12 results for “GBS”</span>
+          <span style="font-size:12px;color:#8A7C80">Sort by <strong style="color:#5C0632">Relevance ▾</strong></span>
+        </div>
+        <a href="#1c" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:18px 22px;display:flex;align-items:flex-start;gap:18px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+          <span style="flex:1"><span style="display:flex;align-items:center;gap:10px"><span style="font-size:14.5px;font-weight:700;color:#241A1E">GBS Vendor Master</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;color:#1F6B45;background:#E6F2EB;border-radius:999px;padding:3px 9px"><svg width="10" height="10" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m4 9.5 3.2 3L14 6"></path></svg>Certified</span></span><span style="display:block;margin-top:6px;font-size:12.5px;line-height:1.5;color:#6E6266">Master data for approved vendors used across GBS procurement and AP processes.</span><span style="display:block;margin-top:8px;font-size:11.5px;color:#8A7C80">Dataset · 184K rows · Updated 17 Aug 2026</span></span>
+          <span style="flex:none;font-size:10.5px;font-weight:700;color:#fff;background:#5C0632;border-radius:999px;padding:5px 12px">Finance › GBS</span>
+        </a>
+        <a href="#1c" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:18px 22px;display:flex;align-items:flex-start;gap:18px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+          <span style="flex:1"><span style="display:flex;align-items:center;gap:10px"><span style="font-size:14.5px;font-weight:700;color:#241A1E">GBS A — Trade Documentation</span></span><span style="display:block;margin-top:6px;font-size:12.5px;line-height:1.5;color:#6E6266">Trade finance documentation set used by Commercial's GBS A shared-services pod.</span><span style="display:block;margin-top:8px;font-size:11.5px;color:#8A7C80">Dataset · 62K rows · Updated 15 Aug 2026</span></span>
+          <span style="flex:none;font-size:10.5px;font-weight:700;color:#5C0632;background:#F6EEE9;border-radius:999px;padding:5px 12px">Commercial › Trade Finance</span>
+        </a>
+        <a href="#1c" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:18px 22px;display:flex;align-items:flex-start;gap:18px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+          <span style="flex:1"><span style="display:flex;align-items:center;gap:10px"><span style="font-size:14.5px;font-weight:700;color:#241A1E">GBS Cost Allocation Report</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;color:#1F6B45;background:#E6F2EB;border-radius:999px;padding:3px 9px"><svg width="10" height="10" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m4 9.5 3.2 3L14 6"></path></svg>Certified</span></span><span style="display:block;margin-top:6px;font-size:12.5px;line-height:1.5;color:#6E6266">Monthly cost allocation summary across GBS cost centers.</span><span style="display:block;margin-top:8px;font-size:11.5px;color:#8A7C80">Visualization · Looker · Updated 01 Aug 2026</span></span>
+          <span style="flex:none;font-size:10.5px;font-weight:700;color:#fff;background:#5C0632;border-radius:999px;padding:5px 12px">Finance › GBS</span>
+        </a>
+        <a href="#1c" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:18px 22px;display:flex;align-items:flex-start;gap:18px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+          <span style="flex:1"><span style="display:flex;align-items:center;gap:10px"><span style="font-size:14.5px;font-weight:700;color:#241A1E">GBS AP Aging Summary</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;color:#1F6B45;background:#E6F2EB;border-radius:999px;padding:3px 9px"><svg width="10" height="10" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m4 9.5 3.2 3L14 6"></path></svg>Certified</span></span><span style="display:block;margin-top:6px;font-size:12.5px;line-height:1.5;color:#6E6266">Accounts-payable aging buckets by vendor, entity and cost center.</span><span style="display:block;margin-top:8px;font-size:11.5px;color:#8A7C80">KPI · Refreshed daily · Updated 21 Aug 2026</span></span>
+          <span style="flex:none;font-size:10.5px;font-weight:700;color:#fff;background:#5C0632;border-radius:999px;padding:5px 12px">Finance › GBS</span>
+        </a>
+        <div style="display:flex;justify-content:center;gap:6px;font-size:12px;font-weight:600;margin-top:4px">
+          <span style="padding:7px 12px;border:1px solid #E0D8D1;border-radius:6px;color:#C9BDB4;background:#fff">‹</span>
+          <span style="padding:7px 12px;border-radius:6px;background:#5C0632;color:#fff">1</span>
+          <span style="padding:7px 12px;border:1px solid #E0D8D1;border-radius:6px;color:#5C0632;background:#fff">2</span>
+          <span style="padding:7px 12px;border:1px solid #E0D8D1;border-radius:6px;color:#5C0632;background:#fff">3</span>
+          <span style="padding:7px 12px;border:1px solid #E0D8D1;border-radius:6px;color:#5C0632;background:#fff">›</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</div>
+</div>
+
+<!-- ============ 2c REQUESTS ============ -->
+<div class="dv-opt" id="2c">
+<div class="dv-olabel"><a class="dv-oid" href="#2c">2c</a>Requests — my access requests + approvals queue</div>
+<div class="dv-card" style="width:1366px">
+<div style="display:flex;align-items:stretch;min-height:760px">
+  <aside style="width:236px;flex:none;background:linear-gradient(180deg,#4E0527,#360419);color:#fff;display:flex;flex-direction:column;padding:22px 14px 18px">
+    <div style="padding:2px 10px 18px;border-bottom:1px solid rgba(255,255,255,.14)">
+      <div style="font-size:22px;font-weight:800;letter-spacing:4px">QATAR</div>
+      <div style="display:flex;align-items:baseline;gap:8px;margin-top:2px"><span style="font-size:9px;font-weight:600;letter-spacing:3px;opacity:.75">AIRWAYS</span><span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.75">القطرية</span></div>
+      <div style="margin-top:14px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 12px"><span style="font-size:11.5px;font-weight:700;letter-spacing:.4px">Data Souq</span><span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.85">سوق البيانات</span></div>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:4px;margin-top:16px;flex:1">
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 8.2 9 3.2l6 5V15H3z"></path></svg>Home</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="5" height="5" rx="1"></rect><rect x="10" y="3" width="5" height="5" rx="1"></rect><rect x="3" y="10" width="5" height="5" rx="1"></rect><rect x="10" y="10" width="5" height="5" rx="1"></rect></svg>Business Functions</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M9 2.8l1.9 3.9 4.3.6-3.1 3 .7 4.3L9 12.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z"></path></svg>Favorites</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;background:rgba(255,255,255,.14);color:#fff;font-size:13.5px;font-weight:600"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3" width="11" height="12" rx="1.5"></rect><path d="M6.5 7h5M6.5 10h5"></path></svg>Requests<span style="margin-left:auto;font-size:10px;font-weight:700;background:#fff;color:#5C0632;border-radius:999px;padding:2px 7px">3</span></div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="12" height="12" rx="2"></rect><path d="M9 6.5v5M6.5 9h5"></path></svg>Collections</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 3.5h7a3 3 0 0 1 3 3v8a2.5 2.5 0 0 0-2.5-2.5H4z"></path><path d="M4 3.5V12"></path></svg>Data Glossary</div>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.65);font-size:13px;font-weight:500;border-top:1px solid rgba(255,255,255,.14)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="9" r="6.5"></circle><path d="M7.2 7.2a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.8.5-.8 1v.4"></path></svg>Help &amp; Support</div>
+  </aside>
+  <main style="flex:1;min-width:0;background:#F7F5F2">
+    <div style="background:#fff;border-bottom:1px solid #EAE4DE;padding:26px 48px 0">
+      <nav style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:500;color:#8A7C80">
+        <a href="#1a" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">Home</a><span>›</span>
+        <span style="color:#5C0632;font-weight:600">Requests</span>
+      </nav>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:16px">
+        <div>
+          <h1 style="margin:0;font-size:26px;font-weight:800;color:#241A1E">Requests</h1>
+          <p style="margin:6px 0 0;font-size:13px;color:#6E6266">Track your access requests and act on approvals assigned to you.</p>
+        </div>
+        <button style="flex:none;border:none;background:#5C0632;color:#fff;border-radius:8px;padding:12px 22px;font-size:13.5px;font-weight:700;font-family:inherit;cursor:pointer;box-shadow:0 2px 8px rgba(92,6,50,.3)" style-hover="background:#3F0422">+ New Request</button>
+      </div>
+      <div style="display:flex;gap:26px;margin-top:20px;font-size:13px;font-weight:600">
+        <span style="padding:0 2px 12px;color:#5C0632;border-bottom:2.5px solid #5C0632">My Requests</span>
+        <span style="display:inline-flex;align-items:center;gap:7px;padding:0 2px 12px;color:#8A7C80;border-bottom:2.5px solid transparent" style-hover="color:#5C0632">Approvals <span style="font-size:10px;font-weight:700;background:#5C0632;color:#fff;border-radius:999px;padding:2px 7px">3</span></span>
+      </div>
+    </div>
+    <div style="padding:26px 48px 44px;display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-size:11.5px;font-weight:700;color:#fff;background:#5C0632;border-radius:999px;padding:6px 14px">All · 6</span>
+        <span style="font-size:11.5px;font-weight:600;color:#8A4B00;background:#FBEFDD;border-radius:999px;padding:6px 14px">Pending · 2</span>
+        <span style="font-size:11.5px;font-weight:600;color:#1F6B45;background:#E6F2EB;border-radius:999px;padding:6px 14px">Approved · 3</span>
+        <span style="font-size:11.5px;font-weight:600;color:#B3261E;background:#F9E7E5;border-radius:999px;padding:6px 14px">Rejected · 1</span>
+      </div>
+      <div style="background:#fff;border:1px solid #EAE4DE;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(40,10,25,.05)">
+        <div style="display:grid;grid-template-columns:1.5fr 1fr .9fr .9fr .9fr .7fr;background:#4E0527;color:#fff;font-size:11px;font-weight:700;letter-spacing:.4px">
+          <div style="padding:12px 22px">DATA PRODUCT</div><div style="padding:12px 16px">ACCESS TYPE</div><div style="padding:12px 16px">REQUESTED ON</div><div style="padding:12px 16px">APPROVER</div><div style="padding:12px 16px">STATUS</div><div style="padding:12px 16px">ACTION</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr .9fr .9fr .9fr .7fr;font-size:12.5px;color:#241A1E;align-items:center">
+          <div style="padding:14px 22px;border-bottom:1px solid #F0EAE4"><a href="#1c" style="font-weight:700;color:#241A1E;text-decoration:none" style-hover="color:#5C0632">GBS Vendor Master</a><span style="display:block;font-size:11px;color:#8A7C80;margin-top:2px">Finance › GBS</span></div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4">Read — BigQuery</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4">18 Aug 2026</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4">GBS Finance Team</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4"><span style="display:inline-block;font-size:11px;font-weight:700;color:#8A4B00;background:#FBEFDD;border-radius:999px;padding:4px 11px">Pending</span></div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4"><a href="#2c" style="font-size:12px;font-weight:600;color:#5C0632;text-decoration:none">Withdraw</a></div>
+          <div style="padding:14px 22px;border-bottom:1px solid #F0EAE4;background:#FBF9F7"><a href="#1c" style="font-weight:700;color:#241A1E;text-decoration:none" style-hover="color:#5C0632">Treasury Cash Position</a><span style="display:block;font-size:11px;color:#8A7C80;margin-top:2px">Finance › Treasury</span></div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">Dashboard viewer</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">12 Aug 2026</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">Treasury Data Office</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7"><span style="display:inline-block;font-size:11px;font-weight:700;color:#1F6B45;background:#E6F2EB;border-radius:999px;padding:4px 11px">Approved</span></div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7"><a href="#1c" style="font-size:12px;font-weight:600;color:#5C0632;text-decoration:none">Open</a></div>
+          <div style="padding:14px 22px;border-bottom:1px solid #F0EAE4"><a href="#1c" style="font-weight:700;color:#241A1E;text-decoration:none" style-hover="color:#5C0632">Customer Loyalty History</a><span style="display:block;font-size:11px;color:#8A7C80;margin-top:2px">Customer Experience › Loyalty</span></div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4">Read — BigQuery</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4">04 Aug 2026</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4">CX Data Office</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4"><span style="display:inline-block;font-size:11px;font-weight:700;color:#B3261E;background:#F9E7E5;border-radius:999px;padding:4px 11px">Rejected</span></div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4"><a href="#2c" style="font-size:12px;font-weight:600;color:#5C0632;text-decoration:none">View reason</a></div>
+          <div style="padding:14px 22px;border-bottom:1px solid #F0EAE4;background:#FBF9F7"><a href="#1c" style="font-weight:700;color:#241A1E;text-decoration:none" style-hover="color:#5C0632">Fuel Uplift Transactions</a><span style="display:block;font-size:11px;color:#8A7C80;margin-top:2px">Operations › Fuel</span></div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">Read — BigQuery</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">29 Jul 2026</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7">Ops Data Office</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7"><span style="display:inline-block;font-size:11px;font-weight:700;color:#1F6B45;background:#E6F2EB;border-radius:999px;padding:4px 11px">Approved</span></div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4;background:#FBF9F7"><a href="#1c" style="font-size:12px;font-weight:600;color:#5C0632;text-decoration:none">Open</a></div>
+          <div style="padding:14px 22px;border-bottom:1px solid #F0EAE4"><a href="#1c" style="font-weight:700;color:#241A1E;text-decoration:none" style-hover="color:#5C0632">GBS AP Aging Summary</a><span style="display:block;font-size:11px;color:#8A7C80;margin-top:2px">Finance › GBS</span></div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4">KPI subscription</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4">22 Jul 2026</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4">GBS Finance Team</div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4"><span style="display:inline-block;font-size:11px;font-weight:700;color:#8A4B00;background:#FBEFDD;border-radius:999px;padding:4px 11px">Pending</span></div><div style="padding:14px 16px;border-bottom:1px solid #F0EAE4"><a href="#2c" style="font-size:12px;font-weight:600;color:#5C0632;text-decoration:none">Withdraw</a></div>
+          <div style="padding:14px 22px;background:#FBF9F7"><a href="#1c" style="font-weight:700;color:#241A1E;text-decoration:none" style-hover="color:#5C0632">Cargo Revenue by Lane</a><span style="display:block;font-size:11px;color:#8A7C80;margin-top:2px">Cargo › Revenue</span></div><div style="padding:14px 16px;background:#FBF9F7">Dashboard viewer</div><div style="padding:14px 16px;background:#FBF9F7">14 Jul 2026</div><div style="padding:14px 16px;background:#FBF9F7">Cargo Data Office</div><div style="padding:14px 16px;background:#FBF9F7"><span style="display:inline-block;font-size:11px;font-weight:700;color:#1F6B45;background:#E6F2EB;border-radius:999px;padding:4px 11px">Approved</span></div><div style="padding:14px 16px;background:#FBF9F7"><a href="#1c" style="font-size:12px;font-weight:600;color:#5C0632;text-decoration:none">Open</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: "add the approvals-queue view of <a class="dv-oid" href="#2c">2c</a>" · "add Lineage and Data Contract tabs" · "generate the Angular + Bootstrap handoff"</p>
+</section>
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Data Souq — internal data marketplace, Qatar Airways brand (desktop 1366px)</span></div>
+<div class="dv-opts">
+
+<!-- ============ 1a HOME ============ -->
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Home — decluttered: search, browse by function, bookmarks</div>
+<div class="dv-card" style="width:1366px">
+<div style="display:flex;align-items:stretch;min-height:820px">
+  <!-- sidebar -->
+  <aside style="width:236px;flex:none;background:linear-gradient(180deg,#4E0527,#360419);color:#fff;display:flex;flex-direction:column;padding:22px 14px 18px">
+    <div style="padding:2px 10px 18px;border-bottom:1px solid rgba(255,255,255,.14)">
+      <div style="font-size:22px;font-weight:800;letter-spacing:4px">QATAR</div>
+      <div style="display:flex;align-items:baseline;gap:8px;margin-top:2px"><span style="font-size:9px;font-weight:600;letter-spacing:3px;opacity:.75">AIRWAYS</span><span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.75">القطرية</span></div>
+      <div style="margin-top:14px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 12px">
+        <span style="font-size:11.5px;font-weight:700;letter-spacing:.4px">Data Souq</span>
+        <span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.85">سوق البيانات</span>
+      </div>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:4px;margin-top:16px;flex:1">
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;background:rgba(255,255,255,.14);color:#fff;font-size:13.5px;font-weight:600"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 8.2 9 3.2l6 5V15H3z"></path></svg>Home</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="5" height="5" rx="1"></rect><rect x="10" y="3" width="5" height="5" rx="1"></rect><rect x="3" y="10" width="5" height="5" rx="1"></rect><rect x="10" y="10" width="5" height="5" rx="1"></rect></svg>Business Functions</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M9 2.8l1.9 3.9 4.3.6-3.1 3 .7 4.3L9 12.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z"></path></svg>Favorites</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3" width="11" height="12" rx="1.5"></rect><path d="M6.5 7h5M6.5 10h5"></path></svg>Requests</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="12" height="12" rx="2"></rect><path d="M9 6.5v5M6.5 9h5"></path></svg>Collections</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 3.5h7a3 3 0 0 1 3 3v8a2.5 2.5 0 0 0-2.5-2.5H4z"></path><path d="M4 3.5V12"></path></svg>Data Glossary</div>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.65);font-size:13px;font-weight:500;border-top:1px solid rgba(255,255,255,.14)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="9" r="6.5"></circle><path d="M7.2 7.2a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.8.5-.8 1v.4"></path><circle cx="9" cy="12.6" r=".2"></circle></svg>Help &amp; Support</div>
+  </aside>
+  <!-- main -->
+  <main style="flex:1;min-width:0;background:#F7F5F2">
+    <div style="position:relative;background:#fff;border-bottom:1px solid #EAE4DE;overflow:hidden">
+      <sc-if value="{{ showHeroImagery }}" hint-placeholder-val="{{ true }}">
+      <div style="position:absolute;top:0;right:0;bottom:0;width:56%;pointer-events:auto">
+        <image-slot id="hero-home" shape="rect" placeholder="Drop the Qatar Airways aircraft hero photo"></image-slot>
+        <div style="position:absolute;inset:0;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.85) 26%,rgba(255,255,255,0) 70%);pointer-events:none"></div>
+      </div>
+      </sc-if>
+      <div style="position:relative;padding:44px 48px 40px;max-width:640px">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <h1 style="margin:0;font-size:34px;line-height:1.15;font-weight:800;color:#241A1E">Data Souq</h1>
+          <span style="font-family:'Noto Kufi Arabic';font-size:16px;color:#5C0632">سوق البيانات</span>
+        </div>
+        <p style="margin:10px 0 0;font-size:14.5px;line-height:1.55;color:#6E6266;max-width:440px;text-wrap:pretty">Discover, access and unlock trusted enterprise data products across Qatar Airways Group.</p>
+        <div style="display:flex;gap:0;margin-top:22px;max-width:560px;box-shadow:0 1px 4px rgba(40,10,25,.08);border-radius:8px">
+          <input style="flex:1;border:1px solid #DED6CF;border-right:none;border-radius:8px 0 0 8px;padding:12px 16px;font-size:13.5px;font-family:inherit;color:#241A1E;outline:none;background:#fff" placeholder="Search business functions, domains, sub-domains or data products…">
+          <button style="border:none;background:#5C0632;color:#fff;border-radius:0 8px 8px 0;padding:0 18px;cursor:pointer;display:flex;align-items:center" style-hover="background:#3F0422"><svg width="17" height="17" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="5"></circle><path d="m12 12 3.5 3.5"></path></svg></button>
+        </div>
+      </div>
+    </div>
+    <div style="padding:26px 48px 40px;display:flex;flex-direction:column;gap:30px">
+      <div style="display:flex;background:#fff;border:1px solid #EAE4DE;border-radius:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)">
+        <div style="display:flex;align-items:center;gap:14px;flex:1;padding:18px 24px;border-right:1px solid #F0EAE4"><span style="width:42px;height:42px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center;flex:none"><svg width="19" height="19" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 2.5 15 5.5v7L9 15.5 3 12.5v-7z"></path><path d="M3 5.5 9 8.5l6-3M9 8.5v7"></path></svg></span><span><span style="display:block;font-size:21px;font-weight:800;color:#241A1E">1,248</span><span style="display:block;font-size:11.5px;color:#8A7C80;margin-top:1px">Data Products</span></span></div>
+        <div style="display:flex;align-items:center;gap:14px;flex:1;padding:18px 24px;border-right:1px solid #F0EAE4"><span style="width:42px;height:42px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center;flex:none"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="5" height="5" rx="1"></rect><rect x="10" y="3" width="5" height="5" rx="1"></rect><rect x="3" y="10" width="5" height="5" rx="1"></rect><rect x="10" y="10" width="5" height="5" rx="1"></rect></svg></span><span><span style="display:block;font-size:21px;font-weight:800;color:#241A1E">16</span><span style="display:block;font-size:11.5px;color:#8A7C80;margin-top:1px">Business Functions</span></span></div>
+        <div style="display:flex;align-items:center;gap:14px;flex:1;padding:18px 24px;border-right:1px solid #F0EAE4"><span style="width:42px;height:42px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center;flex:none"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 2.5c2 1.4 4.2 1.6 5.5 1.6 0 6-1.8 9.3-5.5 11.4C5.3 13.4 3.5 10.1 3.5 4.1c1.3 0 3.5-.2 5.5-1.6z"></path><path d="m6.8 8.8 1.6 1.6 2.8-3"></path></svg></span><span><span style="display:block;font-size:21px;font-weight:800;color:#241A1E">98%</span><span style="display:block;font-size:11.5px;color:#8A7C80;margin-top:1px">Certified Data Products</span></span></div>
+        <div style="display:flex;align-items:center;gap:14px;flex:1;padding:18px 24px"><span style="width:42px;height:42px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center;flex:none"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6.5" cy="6.5" r="2.6"></circle><path d="M2.8 14.5c.5-2.4 2-3.6 3.7-3.6s3.2 1.2 3.7 3.6"></path><circle cx="12.5" cy="7.5" r="2.1"></circle><path d="M11.8 11.1c1.9 0 3.1 1.1 3.5 3.1"></path></svg></span><span><span style="display:block;font-size:21px;font-weight:800;color:#241A1E">450+</span><span style="display:block;font-size:11.5px;color:#8A7C80;margin-top:1px">Data Owners</span></span></div>
+      </div>
+      <div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px">
+          <h2 style="margin:0;font-size:17px;font-weight:700;color:#241A1E">Browse by Business Function</h2>
+          <a href="#1b" style="font-size:12.5px;font-weight:600;color:#5C0632;text-decoration:none;display:inline-flex;align-items:center;gap:6px">View all business functions <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9.5 4.5 13 8l-3.5 3.5"></path></svg></a>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px">
+          <a href="#1b" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:20px 18px 16px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7 9 3.5 15 7M4 7.5v6M7.3 7.5v6M10.7 7.5v6M14 7.5v6M2.8 14h12.4"></path></svg></span>
+            <span style="font-size:14px;font-weight:700;color:#241A1E">Finance</span>
+            <span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:15px;font-weight:700;color:#5C0632">48 <span style="font-size:11px;font-weight:500;color:#8A7C80">Data Products</span></span><span style="font-size:15px;font-weight:700;color:#241A1E">6 <span style="font-size:11px;font-weight:500;color:#8A7C80">Domains</span></span></span>
+            <span style="align-self:flex-end;color:#5C0632"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9.5 4.5 13 8l-3.5 3.5"></path></svg></span>
+          </a>
+          <a href="#1a" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:20px 18px 16px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 3.2 14.8 9 9 14.8 3.2 9z"></path></svg></span>
+            <span style="font-size:14px;font-weight:700;color:#241A1E">Commercial</span>
+            <span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:15px;font-weight:700;color:#5C0632">82 <span style="font-size:11px;font-weight:500;color:#8A7C80">Data Products</span></span><span style="font-size:15px;font-weight:700;color:#241A1E">5 <span style="font-size:11px;font-weight:500;color:#8A7C80">Domains</span></span></span>
+            <span style="align-self:flex-end;color:#5C0632"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9.5 4.5 13 8l-3.5 3.5"></path></svg></span>
+          </a>
+          <a href="#1a" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:20px 18px 16px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="2.6"></circle><path d="M9 2.5v2M9 13.5v2M2.5 9h2M13.5 9h2M4.4 4.4l1.4 1.4M12.2 12.2l1.4 1.4M13.6 4.4l-1.4 1.4M5.8 12.2l-1.4 1.4"></path></svg></span>
+            <span style="font-size:14px;font-weight:700;color:#241A1E">Operations</span>
+            <span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:15px;font-weight:700;color:#5C0632">104 <span style="font-size:11px;font-weight:500;color:#8A7C80">Data Products</span></span><span style="font-size:15px;font-weight:700;color:#241A1E">8 <span style="font-size:11px;font-weight:500;color:#8A7C80">Domains</span></span></span>
+            <span style="align-self:flex-end;color:#5C0632"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9.5 4.5 13 8l-3.5 3.5"></path></svg></span>
+          </a>
+          <a href="#1a" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:20px 18px 16px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 2.5 15 5.5v7L9 15.5 3 12.5v-7z"></path><path d="M3 5.5 9 8.5l6-3M9 8.5v7"></path></svg></span>
+            <span style="font-size:14px;font-weight:700;color:#241A1E">Cargo</span>
+            <span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:15px;font-weight:700;color:#5C0632">27 <span style="font-size:11px;font-weight:500;color:#8A7C80">Data Products</span></span><span style="font-size:15px;font-weight:700;color:#241A1E">2 <span style="font-size:11px;font-weight:500;color:#8A7C80">Domains</span></span></span>
+            <span style="align-self:flex-end;color:#5C0632"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9.5 4.5 13 8l-3.5 3.5"></path></svg></span>
+          </a>
+          <a href="#1a" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:20px 18px 16px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6.5" cy="6.5" r="2.6"></circle><path d="M2.8 14.5c.5-2.4 2-3.6 3.7-3.6s3.2 1.2 3.7 3.6"></path><circle cx="12.5" cy="7.5" r="2.1"></circle><path d="M11.8 11.1c1.9 0 3.1 1.1 3.5 3.1"></path></svg></span>
+            <span style="font-size:14px;font-weight:700;color:#241A1E">Customer Experience</span>
+            <span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:15px;font-weight:700;color:#5C0632">61 <span style="font-size:11px;font-weight:500;color:#8A7C80">Data Products</span></span><span style="font-size:15px;font-weight:700;color:#241A1E">4 <span style="font-size:11px;font-weight:500;color:#8A7C80">Domains</span></span></span>
+            <span style="align-self:flex-end;color:#5C0632"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9.5 4.5 13 8l-3.5 3.5"></path></svg></span>
+          </a>
+        </div>
+      </div>
+      <sc-if value="{{ showBookmarks }}" hint-placeholder-val="{{ true }}">
+      <div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px">
+          <h2 style="margin:0;font-size:17px;font-weight:700;color:#241A1E">Bookmarked data assets</h2>
+          <a href="#1a" style="font-size:12.5px;font-weight:600;color:#5C0632;text-decoration:none">Manage bookmarks</a>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+          <a href="#1c" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="display:flex;align-items:center;gap:8px;background:#4E0527;color:#fff;padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.3px"><svg width="13" height="13" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 3h8v12l-4-2.6L5 15z"></path></svg>DATASET</span>
+            <span style="display:block;padding:14px 14px 16px"><span style="display:block;font-size:13.5px;font-weight:700;color:#241A1E;line-height:1.3">Customer Loyalty History</span><span style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span style="font-size:10.5px;font-weight:600;color:#5C0632;background:#F6EEE9;border-radius:999px;padding:3px 9px">Cust. Experience</span><span style="font-size:10.5px;font-weight:600;color:#6E6266;background:#F2EEE9;border-radius:999px;padding:3px 9px">Loyalty</span></span></span>
+          </a>
+          <a href="#1c" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="display:flex;align-items:center;gap:8px;background:#4E0527;color:#fff;padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.3px"><svg width="13" height="13" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 3h8v12l-4-2.6L5 15z"></path></svg>DATASET</span>
+            <span style="display:block;padding:14px 14px 16px"><span style="display:block;font-size:13.5px;font-weight:700;color:#241A1E;line-height:1.3">Customer Flight Activity</span><span style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span style="font-size:10.5px;font-weight:600;color:#5C0632;background:#F6EEE9;border-radius:999px;padding:3px 9px">Cust. Experience</span><span style="font-size:10.5px;font-weight:600;color:#6E6266;background:#F2EEE9;border-radius:999px;padding:3px 9px">Flights</span></span></span>
+          </a>
+          <a href="#1c" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="display:flex;align-items:center;gap:8px;background:#4E0527;color:#fff;padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.3px"><svg width="13" height="13" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 3h8v12l-4-2.6L5 15z"></path></svg>DATASET</span>
+            <span style="display:block;padding:14px 14px 16px"><span style="display:block;font-size:13.5px;font-weight:700;color:#241A1E;line-height:1.3">GBS Vendor Master</span><span style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span style="font-size:10.5px;font-weight:600;color:#5C0632;background:#F6EEE9;border-radius:999px;padding:3px 9px">Finance</span><span style="font-size:10.5px;font-weight:600;color:#6E6266;background:#F2EEE9;border-radius:999px;padding:3px 9px">GBS</span></span></span>
+          </a>
+          <a href="#1c" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="display:flex;align-items:center;gap:8px;background:#4E0527;color:#fff;padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.3px"><svg width="13" height="13" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 13.5 7 9l2.5 2.5L15 5"></path><path d="M11 5h4v4"></path></svg>KPI</span>
+            <span style="display:block;padding:14px 14px 16px"><span style="display:block;font-size:13.5px;font-weight:700;color:#241A1E;line-height:1.3">Treasury Cash Position</span><span style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><span style="font-size:10.5px;font-weight:600;color:#5C0632;background:#F6EEE9;border-radius:999px;padding:3px 9px">Finance</span><span style="font-size:10.5px;font-weight:600;color:#6E6266;background:#F2EEE9;border-radius:999px;padding:3px 9px">Treasury</span></span></span>
+          </a>
+        </div>
+      </div>
+      </sc-if>
+    </div>
+  </main>
+</div>
+</div>
+</div>
+
+<!-- ============ 1b FUNCTION LANDING ============ -->
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Function landing — Finance → Domains (new hierarchy level)</div>
+<div class="dv-card" style="width:1366px">
+<div style="display:flex;align-items:stretch;min-height:760px">
+  <aside style="width:236px;flex:none;background:linear-gradient(180deg,#4E0527,#360419);color:#fff;display:flex;flex-direction:column;padding:22px 14px 18px">
+    <div style="padding:2px 10px 18px;border-bottom:1px solid rgba(255,255,255,.14)">
+      <div style="font-size:22px;font-weight:800;letter-spacing:4px">QATAR</div>
+      <div style="display:flex;align-items:baseline;gap:8px;margin-top:2px"><span style="font-size:9px;font-weight:600;letter-spacing:3px;opacity:.75">AIRWAYS</span><span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.75">القطرية</span></div>
+      <div style="margin-top:14px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 12px">
+        <span style="font-size:11.5px;font-weight:700;letter-spacing:.4px">Data Souq</span>
+        <span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.85">سوق البيانات</span>
+      </div>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:4px;margin-top:16px;flex:1">
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 8.2 9 3.2l6 5V15H3z"></path></svg>Home</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;background:rgba(255,255,255,.14);color:#fff;font-size:13.5px;font-weight:600"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="5" height="5" rx="1"></rect><rect x="10" y="3" width="5" height="5" rx="1"></rect><rect x="3" y="10" width="5" height="5" rx="1"></rect><rect x="10" y="10" width="5" height="5" rx="1"></rect></svg>Business Functions</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M9 2.8l1.9 3.9 4.3.6-3.1 3 .7 4.3L9 12.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z"></path></svg>Favorites</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3" width="11" height="12" rx="1.5"></rect><path d="M6.5 7h5M6.5 10h5"></path></svg>Requests</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="12" height="12" rx="2"></rect><path d="M9 6.5v5M6.5 9h5"></path></svg>Collections</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 3.5h7a3 3 0 0 1 3 3v8a2.5 2.5 0 0 0-2.5-2.5H4z"></path><path d="M4 3.5V12"></path></svg>Data Glossary</div>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.65);font-size:13px;font-weight:500;border-top:1px solid rgba(255,255,255,.14)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="9" r="6.5"></circle><path d="M7.2 7.2a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.8.5-.8 1v.4"></path></svg>Help &amp; Support</div>
+  </aside>
+  <main style="flex:1;min-width:0;background:#F7F5F2">
+    <div style="position:relative;background:#fff;border-bottom:1px solid #EAE4DE;overflow:hidden">
+      <sc-if value="{{ showHeroImagery }}" hint-placeholder-val="{{ true }}">
+      <div style="position:absolute;top:0;right:0;bottom:0;width:52%">
+        <image-slot id="hero-finance" shape="rect" placeholder="Drop the Finance hero photo"></image-slot>
+        <div style="position:absolute;inset:0;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.85) 24%,rgba(255,255,255,0) 68%);pointer-events:none"></div>
+      </div>
+      </sc-if>
+      <div style="position:relative;padding:26px 48px 30px;max-width:660px">
+        <nav style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:500;color:#8A7C80">
+          <a href="#1a" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">Home</a><span>›</span>
+          <a href="#1b" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">Business Functions</a><span>›</span>
+          <span style="color:#5C0632;font-weight:600">Finance</span>
+        </nav>
+        <div style="display:flex;align-items:flex-start;gap:18px;margin-top:22px">
+          <span style="width:56px;height:56px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center;flex:none"><svg width="24" height="24" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7 9 3.5 15 7M4 7.5v6M7.3 7.5v6M10.7 7.5v6M14 7.5v6M2.8 14h12.4"></path></svg></span>
+          <div>
+            <h1 style="margin:0;font-size:30px;font-weight:800;color:#241A1E">Finance</h1>
+            <p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#6E6266;max-width:420px;text-wrap:pretty">Finance function enables financial control, planning, governance and value optimization across Qatar Airways Group.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="padding:24px 48px 40px;display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;background:#fff;border:1px solid #EAE4DE;border-radius:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)">
+        <div style="display:flex;align-items:center;gap:14px;flex:1;padding:16px 24px;border-right:1px solid #F0EAE4"><span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center;flex:none"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 2.5 15 5.5v7L9 15.5 3 12.5v-7z"></path><path d="M3 5.5 9 8.5l6-3M9 8.5v7"></path></svg></span><span><span style="display:block;font-size:20px;font-weight:800;color:#241A1E">48</span><span style="display:block;font-size:11.5px;color:#8A7C80">Data Products</span></span></div>
+        <div style="display:flex;align-items:center;gap:14px;flex:1;padding:16px 24px;border-right:1px solid #F0EAE4"><span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center;flex:none"><svg width="17" height="17" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="5" height="5" rx="1"></rect><rect x="10" y="3" width="5" height="5" rx="1"></rect><rect x="3" y="10" width="5" height="5" rx="1"></rect><rect x="10" y="10" width="5" height="5" rx="1"></rect></svg></span><span><span style="display:block;font-size:20px;font-weight:800;color:#241A1E">6</span><span style="display:block;font-size:11.5px;color:#8A7C80">Domains</span></span></div>
+        <div style="display:flex;align-items:center;gap:14px;flex:1;padding:16px 24px;border-right:1px solid #F0EAE4"><span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center;flex:none"><svg width="17" height="17" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 2.5c2 1.4 4.2 1.6 5.5 1.6 0 6-1.8 9.3-5.5 11.4C5.3 13.4 3.5 10.1 3.5 4.1c1.3 0 3.5-.2 5.5-1.6z"></path><path d="m6.8 8.8 1.6 1.6 2.8-3"></path></svg></span><span><span style="display:block;font-size:20px;font-weight:800;color:#241A1E">92%</span><span style="display:block;font-size:11.5px;color:#8A7C80">Certified Data Products</span></span></div>
+        <div style="display:flex;align-items:center;gap:14px;flex:1;padding:16px 24px"><span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center;flex:none"><svg width="17" height="17" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6.5" cy="6.5" r="2.6"></circle><path d="M2.8 14.5c.5-2.4 2-3.6 3.7-3.6s3.2 1.2 3.7 3.6"></path><circle cx="12.5" cy="7.5" r="2.1"></circle><path d="M11.8 11.1c1.9 0 3.1 1.1 3.5 3.1"></path></svg></span><span><span style="display:block;font-size:20px;font-weight:800;color:#241A1E">23</span><span style="display:block;font-size:11.5px;color:#8A7C80">Data Owners</span></span></div>
+      </div>
+      <div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px">
+          <h2 style="margin:0;font-size:17px;font-weight:700;color:#241A1E">Domains in Finance</h2>
+          <a href="#1b" style="font-size:12.5px;font-weight:600;color:#5C0632;text-decoration:none;display:inline-flex;align-items:center;gap:6px">View all domains <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9.5 4.5 13 8l-3.5 3.5"></path></svg></a>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+          <a href="#1c" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="4.5" r="1.8"></circle><path d="M9 6.3v2.2M4.5 11.7v-1.5h9v1.5"></path><circle cx="4.5" cy="13.5" r="1.6"></circle><circle cx="9" cy="13.5" r="1.6"></circle><circle cx="13.5" cy="13.5" r="1.6"></circle></svg></span>
+            <span style="font-size:14.5px;font-weight:700;color:#241A1E">GBS</span>
+            <span style="font-size:12px;line-height:1.5;color:#8A7C80;text-wrap:pretty">Provides end-to-end business services and operational excellence across key financial processes.</span>
+            <span style="display:flex;gap:18px;margin-top:4px;border-top:1px solid #F0EAE4;padding-top:12px"><span style="font-size:15px;font-weight:700;color:#5C0632">23 <span style="font-size:11px;font-weight:500;color:#8A7C80">Data Products</span></span><span style="font-size:15px;font-weight:700;color:#241A1E">8 <span style="font-size:11px;font-weight:500;color:#8A7C80">Sub-Domains</span></span></span>
+          </a>
+          <a href="#1b" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13.5 7 9l2.5 2.5L15 5"></path><path d="M11 5h4v4"></path></svg></span>
+            <span style="font-size:14.5px;font-weight:700;color:#241A1E">Business Finance</span>
+            <span style="font-size:12px;line-height:1.5;color:#8A7C80;text-wrap:pretty">Financial planning, reporting and controlling.</span>
+            <span style="display:flex;gap:18px;margin-top:auto;border-top:1px solid #F0EAE4;padding-top:12px"><span style="font-size:15px;font-weight:700;color:#5C0632">12 <span style="font-size:11px;font-weight:500;color:#8A7C80">Data Products</span></span><span style="font-size:15px;font-weight:700;color:#241A1E">4 <span style="font-size:11px;font-weight:500;color:#8A7C80">Sub-Domains</span></span></span>
+          </a>
+          <a href="#1b" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7 9 3.5 15 7M4 7.5v6M7.3 7.5v6M10.7 7.5v6M14 7.5v6M2.8 14h12.4"></path></svg></span>
+            <span style="font-size:14.5px;font-weight:700;color:#241A1E">Treasury</span>
+            <span style="font-size:12px;line-height:1.5;color:#8A7C80;text-wrap:pretty">Treasury operations, risk and liquidity management.</span>
+            <span style="display:flex;gap:18px;margin-top:auto;border-top:1px solid #F0EAE4;padding-top:12px"><span style="font-size:15px;font-weight:700;color:#5C0632">13 <span style="font-size:11px;font-weight:500;color:#8A7C80">Data Products</span></span><span style="font-size:15px;font-weight:700;color:#241A1E">5 <span style="font-size:11px;font-weight:500;color:#8A7C80">Sub-Domains</span></span></span>
+          </a>
+          <a href="#1b" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="2.8" width="10" height="12.4" rx="1.5"></rect><path d="M6.5 6h5M6.5 8.7h5M6.5 11.4h3"></path></svg></span>
+            <span style="font-size:14.5px;font-weight:700;color:#241A1E">Tax</span>
+            <span style="font-size:12px;line-height:1.5;color:#8A7C80;text-wrap:pretty">Tax planning, compliance and reporting.</span>
+            <span style="display:flex;gap:18px;margin-top:auto;border-top:1px solid #F0EAE4;padding-top:12px"><span style="font-size:15px;font-weight:700;color:#5C0632">6 <span style="font-size:11px;font-weight:500;color:#8A7C80">Data Products</span></span><span style="font-size:15px;font-weight:700;color:#241A1E">2 <span style="font-size:11px;font-weight:500;color:#8A7C80">Sub-Domains</span></span></span>
+          </a>
+          <a href="#1b" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 2.5c2 1.4 4.2 1.6 5.5 1.6 0 6-1.8 9.3-5.5 11.4C5.3 13.4 3.5 10.1 3.5 4.1c1.3 0 3.5-.2 5.5-1.6z"></path><path d="m6.8 8.8 1.6 1.6 2.8-3"></path></svg></span>
+            <span style="font-size:14.5px;font-weight:700;color:#241A1E">Internal Audit</span>
+            <span style="font-size:12px;line-height:1.5;color:#8A7C80;text-wrap:pretty">Internal audit and assurance.</span>
+            <span style="display:flex;gap:18px;margin-top:auto;border-top:1px solid #F0EAE4;padding-top:12px"><span style="font-size:15px;font-weight:700;color:#5C0632">4 <span style="font-size:11px;font-weight:500;color:#8A7C80">Data Products</span></span><span style="font-size:15px;font-weight:700;color:#241A1E">1 <span style="font-size:11px;font-weight:500;color:#8A7C80">Sub-Domain</span></span></span>
+          </a>
+          <a href="#1b" style="text-decoration:none;background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 3px rgba(40,10,25,.05)" style-hover="border-color:#5C0632;box-shadow:0 4px 14px rgba(92,6,50,.12)">
+            <span style="width:40px;height:40px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3" width="11" height="12" rx="1.5"></rect><path d="M6 6.2h6M6 8.6h6M6 11h3.5"></path></svg></span>
+            <span style="font-size:14.5px;font-weight:700;color:#241A1E">FP&amp;A</span>
+            <span style="font-size:12px;line-height:1.5;color:#8A7C80;text-wrap:pretty">Financial planning and analysis.</span>
+            <span style="display:flex;gap:18px;margin-top:auto;border-top:1px solid #F0EAE4;padding-top:12px"><span style="font-size:15px;font-weight:700;color:#5C0632">6 <span style="font-size:11px;font-weight:500;color:#8A7C80">Data Products</span></span><span style="font-size:15px;font-weight:700;color:#241A1E">2 <span style="font-size:11px;font-weight:500;color:#8A7C80">Sub-Domains</span></span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</div>
+</div>
+
+<!-- ============ 1c PRODUCT DETAIL ============ -->
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Data product detail — simplified, plain-language data quality</div>
+<div class="dv-card" style="width:1366px">
+<div style="display:flex;align-items:stretch;min-height:760px">
+  <aside style="width:236px;flex:none;background:linear-gradient(180deg,#4E0527,#360419);color:#fff;display:flex;flex-direction:column;padding:22px 14px 18px">
+    <div style="padding:2px 10px 18px;border-bottom:1px solid rgba(255,255,255,.14)">
+      <div style="font-size:22px;font-weight:800;letter-spacing:4px">QATAR</div>
+      <div style="display:flex;align-items:baseline;gap:8px;margin-top:2px"><span style="font-size:9px;font-weight:600;letter-spacing:3px;opacity:.75">AIRWAYS</span><span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.75">القطرية</span></div>
+      <div style="margin-top:14px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 12px">
+        <span style="font-size:11.5px;font-weight:700;letter-spacing:.4px">Data Souq</span>
+        <span style="font-family:'Noto Kufi Arabic';font-size:10px;opacity:.85">سوق البيانات</span>
+      </div>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:4px;margin-top:16px;flex:1">
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 8.2 9 3.2l6 5V15H3z"></path></svg>Home</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;background:rgba(255,255,255,.14);color:#fff;font-size:13.5px;font-weight:600"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="5" height="5" rx="1"></rect><rect x="10" y="3" width="5" height="5" rx="1"></rect><rect x="3" y="10" width="5" height="5" rx="1"></rect><rect x="10" y="10" width="5" height="5" rx="1"></rect></svg>Business Functions</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M9 2.8l1.9 3.9 4.3.6-3.1 3 .7 4.3L9 12.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z"></path></svg>Favorites</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3" width="11" height="12" rx="1.5"></rect><path d="M6.5 7h5M6.5 10h5"></path></svg>Requests</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="12" height="12" rx="2"></rect><path d="M9 6.5v5M6.5 9h5"></path></svg>Collections</div>
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.75);font-size:13.5px;font-weight:500"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 3.5h7a3 3 0 0 1 3 3v8a2.5 2.5 0 0 0-2.5-2.5H4z"></path><path d="M4 3.5V12"></path></svg>Data Glossary</div>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:rgba(255,255,255,.65);font-size:13px;font-weight:500;border-top:1px solid rgba(255,255,255,.14)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="9" r="6.5"></circle><path d="M7.2 7.2a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.8.5-.8 1v.4"></path></svg>Help &amp; Support</div>
+  </aside>
+  <main style="flex:1;min-width:0;background:#F7F5F2">
+    <div style="background:#fff;border-bottom:1px solid #EAE4DE;padding:26px 48px 0">
+      <nav style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:500;color:#8A7C80">
+        <a href="#1a" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">Home</a><span>›</span>
+        <a href="#1b" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">Business Functions</a><span>›</span>
+        <a href="#1b" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">Finance</a><span>›</span>
+        <a href="#1b" style="color:#8A7C80;text-decoration:none" style-hover="color:#5C0632">GBS</a><span>›</span>
+        <span style="color:#5C0632;font-weight:600">GBS Vendor Master</span>
+      </nav>
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-top:18px">
+        <div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <h1 style="margin:0;font-size:26px;font-weight:800;color:#241A1E">GBS Vendor Master</h1>
+            <span style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:#1F6B45;background:#E6F2EB;border-radius:999px;padding:4px 11px"><svg width="12" height="12" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="m4 9.5 3.2 3L14 6"></path></svg>Certified</span>
+          </div>
+          <p style="margin:8px 0 0;font-size:13.5px;line-height:1.55;color:#6E6266;max-width:620px;text-wrap:pretty">Master data for approved vendors used across GBS procurement and AP processes.</p>
+          <div style="display:flex;gap:18px;margin-top:12px;font-size:12px;color:#8A7C80;flex-wrap:wrap">
+            <span>Published by <strong style="color:#241A1E;font-weight:600">GBS Data Office</strong></span>
+            <span>Published on <strong style="color:#241A1E;font-weight:600">12 Jun 2026</strong></span>
+            <span>Type <strong style="color:#241A1E;font-weight:600">BigQuery Table</strong></span>
+            <span>Subscriptions <strong style="color:#241A1E;font-weight:600">6</strong></span>
+            <span>Likes <strong style="color:#241A1E;font-weight:600">9</strong></span>
+          </div>
+        </div>
+        <button style="flex:none;border:none;background:#5C0632;color:#fff;border-radius:8px;padding:12px 22px;font-size:13.5px;font-weight:700;font-family:inherit;cursor:pointer;box-shadow:0 2px 8px rgba(92,6,50,.3)" style-hover="background:#3F0422">Request Access</button>
+      </div>
+      <div style="display:flex;gap:26px;margin-top:22px;font-size:13px;font-weight:600">
+        <span style="padding:0 2px 12px;color:#5C0632;border-bottom:2.5px solid #5C0632">Summary</span>
+        <span style="padding:0 2px 12px;color:#8A7C80;border-bottom:2.5px solid transparent" style-hover="color:#5C0632">Sample Dataset</span>
+        <span style="padding:0 2px 12px;color:#8A7C80;border-bottom:2.5px solid transparent" style-hover="color:#5C0632">Data Profiling</span>
+        <span style="padding:0 2px 12px;color:#8A7C80;border-bottom:2.5px solid transparent" style-hover="color:#5C0632">Lineage</span>
+        <span style="padding:0 2px 12px;color:#8A7C80;border-bottom:2.5px solid transparent" style-hover="color:#5C0632">Data Contract</span>
+        <span style="padding:0 2px 12px;color:#8A7C80;border-bottom:2.5px solid transparent" style-hover="color:#5C0632">Discussions</span>
+      </div>
+    </div>
+    <div style="padding:26px 48px 44px;display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start">
+      <div style="background:#fff;border:1px solid #EAE4DE;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(40,10,25,.05)">
+        <div style="padding:16px 22px;border-bottom:1px solid #F0EAE4;font-size:14.5px;font-weight:700;color:#241A1E">Overview</div>
+        <div style="background:#4E0527;color:#fff;padding:10px 22px;font-size:11.5px;font-weight:700;letter-spacing:.6px">DATASET STATISTICS</div>
+        <div style="display:grid;grid-template-columns:180px 1fr;font-size:12.5px">
+          <div style="padding:13px 22px;border-bottom:1px solid #F0EAE4;color:#8A7C80;font-weight:600">UID</div><div style="padding:13px 22px;border-bottom:1px solid #F0EAE4;color:#241A1E;font-family:ui-monospace,Menlo,monospace;font-size:12px">c37f6b48-6190-4934-951b-886a83d244fa</div>
+          <div style="padding:13px 22px;border-bottom:1px solid #F0EAE4;color:#8A7C80;font-weight:600;background:#FBF9F7">Display Name</div><div style="padding:13px 22px;border-bottom:1px solid #F0EAE4;color:#241A1E;background:#FBF9F7">GBS Vendor Master</div>
+          <div style="padding:13px 22px;border-bottom:1px solid #F0EAE4;color:#8A7C80;font-weight:600">Name</div><div style="padding:13px 22px;border-bottom:1px solid #F0EAE4;color:#241A1E;font-family:ui-monospace,Menlo,monospace;font-size:12px">projects/qr-gbs-prod/datasets/gbs/tables/vendor_master</div>
+          <div style="padding:13px 22px;border-bottom:1px solid #F0EAE4;color:#8A7C80;font-weight:600;background:#FBF9F7">Create Time</div><div style="padding:13px 22px;border-bottom:1px solid #F0EAE4;color:#241A1E;background:#FBF9F7">2025-06-12 · 09:40 AST</div>
+          <div style="padding:13px 22px;border-bottom:1px solid #F0EAE4;color:#8A7C80;font-weight:600">Update Time</div><div style="padding:13px 22px;border-bottom:1px solid #F0EAE4;color:#241A1E">2026-08-17 · 10:00 AST</div>
+          <div style="padding:13px 22px;color:#8A7C80;font-weight:600;background:#FBF9F7">Rows · Columns</div><div style="padding:13px 22px;color:#241A1E;background:#FBF9F7">184,206 rows · 42 columns</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:18px 20px;box-shadow:0 1px 3px rgba(40,10,25,.05)">
+          <div style="font-size:14px;font-weight:700;color:#241A1E;margin-bottom:14px">Data Quality</div>
+          <div style="display:flex;flex-direction:column;gap:12px;font-size:12.5px;color:#241A1E">
+            <div style="display:flex;align-items:flex-start;gap:10px"><span style="width:20px;height:20px;border-radius:50%;background:#E6F2EB;color:#1F6B45;display:flex;align-items:center;justify-content:center;flex:none"><svg width="11" height="11" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m4 9.5 3.2 3L14 6"></path></svg></span>Certified for business use</div>
+            <div style="display:flex;align-items:flex-start;gap:10px"><span style="width:20px;height:20px;border-radius:50%;background:#E6F2EB;color:#1F6B45;display:flex;align-items:center;justify-content:center;flex:none"><svg width="11" height="11" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m4 9.5 3.2 3L14 6"></path></svg></span>Refreshed weekly — Sundays, 10 AM</div>
+            <div style="display:flex;align-items:flex-start;gap:10px"><span style="width:20px;height:20px;border-radius:50%;background:#E6F2EB;color:#1F6B45;display:flex;align-items:center;justify-content:center;flex:none"><svg width="11" height="11" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m4 9.5 3.2 3L14 6"></path></svg></span>Complete — no missing fields</div>
+            <div style="display:flex;align-items:flex-start;gap:10px"><span style="width:20px;height:20px;border-radius:50%;background:#F6EEE9;color:#5C0632;display:flex;align-items:center;justify-content:center;flex:none"><svg width="11" height="11" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="6.5" r="2.6"></circle><path d="M3.8 14.5c.6-2.6 2.6-4 5.2-4s4.6 1.4 5.2 4"></path></svg></span>Owner — GBS Finance Team</div>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:18px 20px;box-shadow:0 1px 3px rgba(40,10,25,.05)">
+          <div style="font-size:14px;font-weight:700;color:#241A1E;margin-bottom:10px">Classification</div>
+          <span style="display:inline-block;font-size:11.5px;font-weight:700;color:#8A4B00;background:#FBEFDD;border-radius:999px;padding:5px 12px">Confidential — Restricted</span>
+        </div>
+        <div style="background:#fff;border:1px solid #EAE4DE;border-radius:10px;padding:18px 20px;box-shadow:0 1px 3px rgba(40,10,25,.05)">
+          <div style="font-size:14px;font-weight:700;color:#241A1E;margin-bottom:10px">Business Function</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:#5C0632"><a href="#1b" style="color:#5C0632;text-decoration:none">Finance</a><span style="color:#C9BDB4">›</span><a href="#1b" style="color:#5C0632;text-decoration:none">GBS</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: "add the search-results screen with domain filters" · "make <a class="dv-oid" href="#1a">1a</a>'s hero full-width burgundy" · "generate the Angular + Bootstrap handoff"</p>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showBookmarks&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Home&quot;},&quot;showHeroImagery&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Heroes&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showBookmarks: this.props.showBookmarks ?? true,
+      showHeroImagery: this.props.showHeroImagery ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>

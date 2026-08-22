@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Souq — GBS Vendor Master · Sample Dataset</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-word">QATAR</div>
+      <div class="brand-sub"><span class="latin">AIRWAYS</span><span class="ar">القطرية</span></div>
+      <div class="brand-pill"><span class="latin">Data Souq</span><span class="ar">سوق البيانات</span></div>
+    </div>
+    <nav class="side-nav">
+      <a class="nav-item" href="index.html"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 8.2 9 3.2l6 5V15H3z"/></svg>Home</a>
+      <a class="nav-item is-active" href="finance.html"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="5" height="5" rx="1"/><rect x="10" y="3" width="5" height="5" rx="1"/><rect x="3" y="10" width="5" height="5" rx="1"/><rect x="10" y="10" width="5" height="5" rx="1"/></svg>Business Functions</a>
+      <a class="nav-item" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M9 2.8l1.9 3.9 4.3.6-3.1 3 .7 4.3L9 12.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z"/></svg>Favorites</a>
+      <a class="nav-item" href="requests.html"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3" width="11" height="12" rx="1.5"/><path d="M6.5 7h5M6.5 10h5"/></svg>Requests</a>
+      <a class="nav-item" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="12" height="12" rx="2"/><path d="M9 6.5v5M6.5 9h5"/></svg>Collections</a>
+      <a class="nav-item" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 3.5h7a3 3 0 0 1 3 3v8a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M4 3.5V12"/></svg>Data Glossary</a>
+    </nav>
+    <a class="nav-item nav-help" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="9" r="6.5"/><path d="M7.2 7.2a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.8.5-.8 1v.4"/></svg>Help &amp; Support</a>
+  </aside>
+
+  <main class="main">
+
+    <header class="page-head">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span>›</span>
+        <a href="finance.html">Business Functions</a><span>›</span>
+        <a href="finance.html">Finance</a><span>›</span>
+        <a href="finance.html">GBS</a><span>›</span>
+        <span class="current">GBS Vendor Master</span>
+      </nav>
+      <div class="title-row">
+        <div>
+          <div class="title-line">
+            <h1 class="page-title">GBS Vendor Master</h1>
+            <span class="chip chip--success"><svg width="12" height="12" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="m4 9.5 3.2 3L14 6"/></svg>Certified</span>
+          </div>
+          <p class="lede">Master data for approved vendors used across GBS procurement and AP processes.</p>
+        </div>
+        <button class="btn-primary" type="button">Request Access</button>
+      </div>
+      <nav class="tabs" aria-label="Product sections">
+        <a class="tab" href="product.html">Summary</a>
+        <a class="tab is-active" href="product-sample.html" aria-current="page">Sample Dataset</a>
+        <a class="tab" href="#">Data Profiling</a>
+        <a class="tab" href="#">Lineage</a>
+        <a class="tab" href="#">Data Contract</a>
+        <a class="tab" href="#">Discussions</a>
+      </nav>
+    </header>
+
+    <div class="content content--tight">
+
+      <div class="note-row">
+        <div class="note-left">
+          <span class="chip chip--warning"><svg width="12" height="12" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="10" height="7" rx="1.5"/><path d="M6 8V6a3 3 0 0 1 6 0v2"/></svg>Masked preview</span>
+          <span class="note-hint">Sensitive columns are anonymized until access is granted.</span>
+        </div>
+        <span class="note-hint">Showing <strong style="color:var(--qr-text)">10</strong> of 100 sample rows</span>
+      </div>
+
+      <div class="data-card">
+        <div class="table-scroll">
+          <table class="data data--mono">
+            <thead>
+              <tr>
+                <th style="width:120px">VENDOR_ID</th>
+                <th>VENDOR_NAME</th>
+                <th>COUNTRY</th>
+                <th>CATEGORY</th>
+                <th>PAYMENT_TERMS</th>
+                <th>STATUS</th>
+                <th>UPDATED_AT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>V-104281</td><td>Al Rayyan Catering Co.</td><td>QA</td><td>Catering</td><td>NET 30</td><td class="cell-ok">ACTIVE</td><td>2026-08-17</td></tr>
+              <tr><td>V-104282</td><td>Gulf Ground Services LLC</td><td>AE</td><td>Ground Ops</td><td>NET 45</td><td class="cell-ok">ACTIVE</td><td>2026-08-17</td></tr>
+              <tr><td>V-104283</td><td>████████ Fuel Trading</td><td>SG</td><td>Fuel</td><td>NET 60</td><td class="cell-ok">ACTIVE</td><td>2026-08-16</td></tr>
+              <tr><td>V-104284</td><td>Doha Tech Supplies WLL</td><td>QA</td><td>IT Hardware</td><td>NET 30</td><td class="cell-warn">ON HOLD</td><td>2026-08-14</td></tr>
+              <tr><td>V-104285</td><td>████████ Logistics FZE</td><td>AE</td><td>Cargo</td><td>NET 45</td><td class="cell-ok">ACTIVE</td><td>2026-08-12</td></tr>
+              <tr><td>V-104286</td><td>Hamad Aviation Parts</td><td>QA</td><td>MRO</td><td>NET 60</td><td class="cell-ok">ACTIVE</td><td>2026-08-10</td></tr>
+              <tr><td>V-104287</td><td>Skyline Media Group</td><td>GB</td><td>Marketing</td><td>NET 30</td><td class="cell-bad">INACTIVE</td><td>2026-08-02</td></tr>
+              <tr><td>V-104288</td><td>████████ Facilities Mgmt</td><td>QA</td><td>Facilities</td><td>NET 30</td><td class="cell-ok">ACTIVE</td><td>2026-07-28</td></tr>
+              <tr><td>V-104289</td><td>Oryx Office Interiors</td><td>QA</td><td>Facilities</td><td>NET 45</td><td class="cell-ok">ACTIVE</td><td>2026-07-21</td></tr>
+              <tr><td>V-104290</td><td>Jetstream Training Ltd</td><td>GB</td><td>Training</td><td>NET 30</td><td class="cell-ok">ACTIVE</td><td>2026-07-18</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-foot">
+          <span class="foot-note">42 columns · scroll horizontally to view all</span>
+          <nav class="pager" aria-label="Sample rows pagination">
+            <span class="is-disabled">‹</span>
+            <span class="is-current">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">›</a>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+</body>
+</html>
