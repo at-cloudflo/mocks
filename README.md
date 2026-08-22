@@ -1,8 +1,45 @@
 # Data Souq — UI Mockups
 
-High-fidelity desktop mockups for **Data Souq**, the internal Qatar Airways data marketplace, implemented as a static HTML/CSS site — no build step, no JavaScript framework.
+High-fidelity desktop mockups for **Data Souq**, the internal Qatar Airways data marketplace.
 
-## Screens
+Two implementations live in this repo:
+
+1. **`data-souq/` — Angular 20 + Bootstrap 5 application** (the production-track build): all screens, routed and interactive, with mock data services. See [`data-souq/README.md`](data-souq/README.md) or run:
+   ```
+   cd data-souq
+   npm install
+   npm start          # http://localhost:4200
+   ```
+2. **Static HTML/CSS site** (the original six mockup pages, kept for reference) — described below.
+
+## Angular app screens
+
+Everything from the static mockups plus all previously missing screens:
+
+| Route | Screen |
+|---|---|
+| `/login` | **New** — Sign-in page (mock auth; all other routes are guarded, logout via the sidebar user card) |
+| `/` | Home — search, browse by business function, bookmarked assets |
+| `/functions` | **New** — Business Functions index (all 16 functions) |
+| `/functions/:slug` | Function landing (Finance, Commercial, Operations, Cargo, CX, …) |
+| `/functions/:fn/domains/:slug` | **New** — Domain detail: sub-domains + data products |
+| `/products/:slug/summary` | Data product — Summary tab |
+| `/products/:slug/sample` | Data product — Sample Dataset tab (masked preview) |
+| `/products/:slug/profiling` | **New** — Data Profiling tab (column stats, completeness meters) |
+| `/products/:slug/lineage` | **New** — Lineage tab (upstream sources → product → consumers) |
+| `/products/:slug/contract` | **New** — Data Contract tab (SLA, schema guarantees, versions) |
+| `/products/:slug/discussions` | **New** — Discussions tab (threads + composer) |
+| `/search` | Search results — working function / domain / asset-type filters |
+| `/requests` | Requests — My Requests with working status filters |
+| `/requests/approvals` | **New** — Approvals queue with approve/reject actions |
+| `/favorites` | **New** — Favorites / bookmarked assets |
+| `/collections` | **New** — Collections (mine + shared) |
+| `/glossary` | **New** — Data Glossary with A–Z nav and live search |
+| `/help` | **New** — Help & Support with FAQ accordion |
+
+The "Request Access" button opens a Bootstrap modal; the design tokens below are wired into the Bootstrap theme via SCSS variable overrides in `data-souq/src/styles.scss`.
+
+## Static mockup screens
 
 | Page | Screen |
 |---|---|
